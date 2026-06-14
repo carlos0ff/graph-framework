@@ -1,8 +1,15 @@
 # graph-framework
 
-![PHP](https://img.shields.io/badge/PHP-%5E8.2-777BB4?logo=php&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-![PHPUnit](https://img.shields.io/badge/tests-PHPUnit-3776AB)
+<div align="center">
+
+[![Stars](https://img.shields.io/github/stars/carlos0ff/graph-framework?style=for-the-badge&label=STARS&color=yellow&logo=github)](https://github.com/carlos0ff/graph-framework/stargazers)
+[![Forks](https://img.shields.io/github/forks/carlos0ff/graph-framework?style=for-the-badge&label=FORKS&color=blue)](https://github.com/carlos0ff/graph-framework/network/members)
+[![Issues](https://img.shields.io/github/issues/carlos0ff/graph-framework?style=for-the-badge&label=ISSUES&color=green)](https://github.com/carlos0ff/graph-framework/issues)
+[![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge&logo=opensourceinitiative)](https://github.com/carlos0ff/graph-framework/blob/master/LICENSE)
+[![Language](https://img.shields.io/badge/Linguagem-PHP-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](#)
+[![Professor](https://img.shields.io/badge/Prof-Thiago_Rodrigues-blue.svg?style=for-the-badge&logo=teacher&colorB=922820)](https://www.linkedin.com/in/thiago-rodrigues-172910152/)
+
+</div>
 
 Biblioteca de estruturas de dados e algoritmos de grafos implementada em PHP puro, sem dependências externas.
 
@@ -116,4 +123,4 @@ exercícios práticos, está em [`docs/README.md`](docs/README.md).
 
 ## Licença
 
-MIT
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
