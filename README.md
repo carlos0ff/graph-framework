@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="docs/images/graph-logo.png" alt="Graph Framework" width="320">
+
 [![Stars](https://img.shields.io/github/stars/carlos0ff/graph-framework?style=for-the-badge&label=STARS&color=yellow&logo=github)](https://github.com/carlos0ff/graph-framework/stargazers)
 [![Forks](https://img.shields.io/github/forks/carlos0ff/graph-framework?style=for-the-badge&label=FORKS&color=blue)](https://github.com/carlos0ff/graph-framework/network/members)
 [![Issues](https://img.shields.io/github/issues/carlos0ff/graph-framework?style=for-the-badge&label=ISSUES&color=green)](https://github.com/carlos0ff/graph-framework/issues)
