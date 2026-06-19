@@ -5,7 +5,13 @@ namespace Algorithms\Graph\Algorithms;
 use Algorithms\Graph\Graph;
 
 /**
- * Dijkstra -> cálculo do caminho mínimo entre vértices de um grafo ponderado.
+ * Algoritmo de Dijkstra — caminho mínimo em grafos ponderados sem pesos negativos.
+ *
+ * Dado um vértice de origem, calcula a menor distância acumulada até cada um dos
+ * demais vértices alcançáveis do grafo. Complexidade: O(V²) na implementação
+ * com busca linear do mínimo (sem heap).
+ *
+ * @package Algorithms\Graph\Algorithms
  */
 class Dijkstra
 {
@@ -21,10 +27,11 @@ class Dijkstra
     }
 
     /**
-     * Calcula as distâncias mínimas a partir do vértice de origem.
+     * Calcula a distância mínima do vértice de origem a todos os demais vértices.
      *
-     * @param string $origem O rótulo do vértice de origem.
-     * @return array<string, int> Mapa de rótulo do vértice => distância mínima a partir da origem.
+     * @param  string             $origem Rótulo do vértice de partida.
+     * @return array<string, int>         Mapa rótulo → distância mínima; vértices inacessíveis
+     *                                    não aparecem no resultado (implementação a completar).
      */
     public function calcularDistancias(string $origem): array
     {

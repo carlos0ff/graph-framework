@@ -18,6 +18,10 @@ autoload de desenvolvimento configurado no `composer.json`:
 Após editar os arquivos, rode `composer dump-autoload` se uma nova classe
 não estiver sendo encontrada.
 
+## Enunciado
+
+O enunciado completo da avaliação está em [Exercício Final 2026.pdf](../assets/pdfs/Exercicio-Final-2026.pdf).
+
 ## Lista de exercícios
 
 | # | Classe | Descrição | Nível |

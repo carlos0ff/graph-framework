@@ -7,6 +7,12 @@ use Algorithms\Graph\Vertex;
 
 /**
  * Contrato para implementações de grafo.
+ *
+ * Define as operações mínimas de construção (addVertice, addAresta) e consulta
+ * (getVertice, getVertices, getArestas, getAdjacentes) que qualquer representação
+ * de grafo desta biblioteca deve fornecer.
+ *
+ * @package Algorithms\Graph\Contracts
  */
 interface GraphInterface
 {

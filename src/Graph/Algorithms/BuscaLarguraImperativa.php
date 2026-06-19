@@ -6,7 +6,13 @@ use Algorithms\Graph\Graph;
 use SplQueue;
 
 /**
- * BuscaLarguraImperativa -> BFS usando SplQueue como fila.
+ * Busca em Largura (BFS) usando {@see \SplQueue} como fila.
+ *
+ * Variante imperativa da BFS com fila de dupla-extremidade da SPL, que oferece
+ * desempenho O(1) para enqueue/dequeue em contraste com o array_shift O(n) de
+ * {@see BuscaLargura}.
+ *
+ * @package Algorithms\Graph\Algorithms
  */
 class BuscaLarguraImperativa
 {
@@ -31,10 +37,10 @@ class BuscaLarguraImperativa
     }
 
     /**
-     * Realiza uma busca em largura (BFS).
+     * Percorre o grafo em largura a partir do vértice identificado por $rotulo.
      *
-     * @param string $rotulo
-     * @return array
+     * @param  string   $rotulo Rótulo do vértice de origem.
+     * @return Vertex[]         Vértices na ordem de visitação (BFS), ou [] se a origem não existir.
      */
     public function buscar(string $rotulo): array
     {

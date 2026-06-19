@@ -7,7 +7,14 @@ use Algorithms\Graph\Exceptions\QtdeMaximaException;
 use Algorithms\Graph\Exceptions\VertexNotFoundException;
 
 /**
- * Grafo       -> Graph
+ * Grafo representado por lista de adjacência.
+ *
+ * Cada vértice é indexado pelo seu rótulo (string) e mantém uma lista de
+ * {@see Edge} com os vizinhos e pesos. Suporta grafos direcionados e não
+ * direcionados; em grafos não direcionados cada aresta é inserida nos dois
+ * sentidos automaticamente.
+ *
+ * @package Algorithms\Graph
  */
 class Graph implements GraphInterface {
 

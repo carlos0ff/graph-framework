@@ -5,7 +5,13 @@ namespace Algorithms\Graph\Algorithms;
 use Algorithms\Graph\Graph;
 
 /**
- * BuscaLargura -> BFS
+ * Busca em Largura (BFS) usando array como fila (FIFO com array_shift).
+ *
+ * Visita todos os vértices alcançáveis a partir de uma origem, nível a nível,
+ * garantindo que cada vértice seja processado exatamente uma vez.
+ *
+ * @see BuscaLarguraImperativa para a variante com {@see \SplQueue}.
+ * @package Algorithms\Graph\Algorithms
  */
 class BuscaLargura {
     /**@var array */
@@ -29,9 +35,10 @@ class BuscaLargura {
     }
 
     /**
-     * Realiza uma busca em largura (BFS).
-     * @param string $rotulo
-     * @return array
+     * Percorre o grafo em largura a partir do vértice identificado por $rotulo.
+     *
+     * @param  string   $rotulo Rótulo do vértice de origem.
+     * @return Vertex[]         Vértices na ordem de visitação (BFS), ou [] se a origem não existir.
      */
     public function buscar(string $rotulo): array
     {

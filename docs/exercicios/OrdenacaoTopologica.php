@@ -18,6 +18,9 @@ class OrdenacaoTopologica
     /** @var Graph */
     private Graph $grafo;
 
+    /**
+     * @param Graph $grafo
+     */
     public function __construct(Graph $grafo)
     {
         $this->grafo = $grafo;
@@ -25,12 +28,11 @@ class OrdenacaoTopologica
 
     /**
      * Retorna os rótulos dos vértices em uma ordem topológica válida.
-     *
      * @return array<int, string>
      */
     public function ordenar(): array
     {
-        // TODO: implementar a ordenação topológica
+
         return [];
     }
 }

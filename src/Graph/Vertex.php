@@ -3,9 +3,12 @@
 namespace Algorithms\Graph;
 
 /**
- * Classe que representa um vértice no grafo.
- * POJO-Bean
- * Vertice     -> Vertex
+ * Representa um vértice do grafo.
+ *
+ * Armazena o rótulo e os contadores de grau total, grau de entrada e grau de
+ * saída, que são incrementados pelo {@see Graph} a cada aresta conectada.
+ *
+ * @package Algorithms\Graph
  */
 class Vertex {
 
@@ -49,9 +52,10 @@ class Vertex {
     }
 
     /**
+     * Incrementa o grau total do vértice e retorna o novo valor.
      *
-     * @param int $value
-     * @return int
+     * @param  int $value Quantidade a incrementar (normalmente 1).
+     * @return int        Grau total atualizado.
      */
     public function addGrau(int $value): int
     {
@@ -60,21 +64,22 @@ class Vertex {
     }
 
     /**
+     * Incrementa o grau de entrada (arestas que chegam) e retorna o novo valor.
      *
-     * @param int $value
-     * @return int
+     * @param  int $value Quantidade a incrementar (normalmente 1).
+     * @return int        Grau de entrada atualizado.
      */
     public function addGrauEntrada(int $value): int
     {
         $this->grauEntrada += $value;
-        
         return $this->grauEntrada;
     }
 
     /**
+     * Incrementa o grau de saída (arestas que partem) e retorna o novo valor.
      *
-     * @param int $value
-     * @return int
+     * @param  int $value Quantidade a incrementar (normalmente 1).
+     * @return int        Grau de saída atualizado.
      */
     public function addGrauSaida(int $value): int
     {

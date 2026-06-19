@@ -3,7 +3,13 @@
 namespace Algorithms\Graph;
 
 /**
- * Representação de um grafo por matriz de adjacência.
+ * Representação de um grafo por matriz de adjacência quadrada (n × n).
+ *
+ * Cada célula matriz[i][j] armazena o peso da aresta entre o vértice de índice
+ * i e o de índice j (0 = sem aresta). Em grafos não direcionados a matriz é
+ * simétrica: matriz[i][j] === matriz[j][i].
+ *
+ * @package Algorithms\Graph
  */
 class AdjacencyMatrix
 {
@@ -20,8 +26,8 @@ class AdjacencyMatrix
     private bool $direcionado;
 
     /**
-     * @param Vertex[] $vertices
-     * @param bool $direcionado
+     * @param Vertex[] $vertices    Lista ordenada de vértices; o índice na lista é o índice na matriz.
+     * @param bool     $direcionado true = dígrafo (matriz assimétrica), false = não direcionado (simétrica).
      */
     public function __construct(array $vertices, bool $direcionado)
     {
@@ -33,10 +39,13 @@ class AdjacencyMatrix
     }
 
     /**
-     * Conecta dois vértices pelos seus índices na matriz.
-     * @param int $indiceVerticeOrigem
-     * @param int $indiceVerticeDestino
-     * @param int $peso
+     * Registra uma aresta entre dois vértices identificados por seus índices na matriz.
+     *
+     * Em grafos não direcionados preenche também a célula simétrica [destino][origem].
+     *
+     * @param  int $indiceVerticeOrigem  Índice do vértice de origem.
+     * @param  int $indiceVerticeDestino Índice do vértice de destino.
+     * @param  int $peso                 Peso da aresta (padrão 1 para grafos sem peso).
      * @return void
      */
     public function conectarVertices(int $indiceVerticeOrigem, int $indiceVerticeDestino, int $peso = 1): void
@@ -49,7 +58,8 @@ class AdjacencyMatrix
     }
 
     /**
-     * Imprime a matriz de adjacência.
+     * Imprime a matriz de adjacência no formato tabular (linhas × colunas).
+     *
      * @return void
      */
     public function imprimir(): void

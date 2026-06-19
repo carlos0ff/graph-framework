@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="docs/images/graph-logo.png" alt="Graph Framework" width="320">
+<img src="docs/assets/images/graph-logo.png" alt="Graph Framework" width="320">
 
 [![Stars](https://img.shields.io/github/stars/carlos0ff/graph-framework?style=for-the-badge&label=STARS&color=yellow&logo=github)](https://github.com/carlos0ff/graph-framework/stargazers)
 [![Forks](https://img.shields.io/github/forks/carlos0ff/graph-framework?style=for-the-badge&label=FORKS&color=blue)](https://github.com/carlos0ff/graph-framework/network/members)
@@ -15,7 +15,7 @@
 
 Biblioteca de estruturas de dados e algoritmos de grafos implementada em PHP puro, sem dependências externas.
 
-![Grafo](docs/images/graph.png)
+![Grafo](docs/assets/images/graph.png)
 
 ## Sobre o projeto
 
@@ -64,7 +64,7 @@ php main.php
 
 Exemplo de saída da execução:
 
-![Exemplo de execução](docs/images/exemplo-execucao.png)
+![Exemplo de execução](docs/assets/images/exemplo-execucao.png)
 
 ## Estrutura do projeto
 
@@ -122,6 +122,23 @@ vendor/bin/phpunit
 
 A documentação completa, com a estrutura do projeto, descrição das classes e
 exercícios práticos, está em [`docs/README.md`](docs/README.md).
+
+## Recursos
+
+### Diagramas UML
+
+| Imagem | Descrição |
+|--------|-----------|
+| [![UML completo](docs/assets/images/diagrama-uml-completo.png)](docs/assets/images/diagrama-uml-completo.png) | Hierarquia completa de classes |
+| [![UML simplificado](docs/assets/images/diagrama-uml-simplificado.png)](docs/assets/images/diagrama-uml-simplificado.png) | Visão simplificada (Grafo, Matriz, Buscas) |
+
+### Exercício Final 2026.1
+
+| Recurso | Link |
+|---------|------|
+| Enunciado (PDF) | [Exercicio-Final-2026.pdf](docs/assets/pdfs/Exercicio-Final-2026.pdf) |
+| Material Dijkstra (PDF) | [Exercício Dijkstra.pdf](docs/assets/pdfs/Exercício%20Dijkstra.pdf) |
+| Resoluções (PHP/Java) | [docs/exercicios/final/](docs/exercicios/final/) |
 
 ## Licença
 

@@ -5,13 +5,17 @@ namespace Algorithms\Utils;
 use Algorithms\Graph\Graph;
 
 /**
- * Utilitário para impressão de grafos.
+ * Utilitários de exibição para estruturas do grafo.
+ *
+ * @package Algorithms\Utils
  */
 class Printer
 {
     /**
-     * Imprime os vértices do grafo e seus respectivos adjacentes.
-     * @param Graph $grafo
+     * Imprime cada vértice do grafo seguido de seus adjacentes no formato:
+     * <code>Vertice{rotulo='X', grau=N} -> [Y, Z]</code>
+     *
+     * @param  Graph $grafo Grafo a ser exibido.
      * @return void
      */
     public static function imprimirGrafo(Graph $grafo): void

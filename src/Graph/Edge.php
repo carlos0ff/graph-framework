@@ -3,7 +3,12 @@
 namespace Algorithms\Graph;
 
 /**
- * Aresta      -> Edge
+ * Representa uma aresta direcionada com peso.
+ *
+ * Armazena apenas o vértice de destino e o peso; o vértice de origem é implícito
+ * pela lista de adjacência do {@see Graph} que contém esta aresta.
+ *
+ * @package Algorithms\Graph
  */
 class Edge {
 
